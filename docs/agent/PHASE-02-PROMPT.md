@@ -1,17 +1,19 @@
-# PHASE 02 PROMPT: Core UI & Layout Components
+# Phase 02: Core Layout, Navigation & Shell
 
-## Objective
-Build the reusable UI component primitive library (`Button`, `Badge`, `GlassCard`, `VideoModal`) and global layout components (`Navbar`, `Footer`).
+## Context
+Build the global application frame including the sticky glass navigation bar, mobile drawer, and footer.
 
-## Files to Modify / Create
-- `src/components/ui/Button.tsx`
-- `src/components/ui/Badge.tsx`
-- `src/components/ui/GlassCard.tsx`
-- `src/components/ui/VideoModal.tsx`
+## Objectives
+1. Implement `src/components/layout/Navbar.tsx` with sticky scroll detection, pulsing availability beacon, active route states, and responsive mobile menu.
+2. Implement `src/components/layout/Footer.tsx` with category navigation, quick social links, studio copyright, and direct quote trigger.
+3. Configure `src/app/layout.tsx` with root HTML shell, viewport settings, and global metadata.
+
+## Allowed Files
 - `src/components/layout/Navbar.tsx`
 - `src/components/layout/Footer.tsx`
+- `src/app/layout.tsx`
 
 ## Acceptance Criteria
-- Navbar is fixed, sticky with backdrop blur and responsive mobile drawer.
-- Footer features quick links, direct channels, and brand status indicator.
-- VideoModal supports ESC/spacebar keyboard shortcuts, fullscreen, and play/pause controls.
+- Navigation shrinks and increases glass backdrop blur upon scrolling past 20px.
+- Mobile menu opens smoothly and closes on route change.
+- Footer displays active social channels and links.

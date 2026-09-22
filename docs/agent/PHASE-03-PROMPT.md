@@ -1,18 +1,21 @@
-# PHASE 03 PROMPT: Cinematic Home Page Implementation
+# Phase 03: Cinematic Home Page & Showcase
 
-## Objective
-Implement the immersive Home Page featuring the full-screen cinematic video hero, featured projects reel, services capability preview, 4-step generative workflow, client testimonials, and conversion CTA.
+## Context
+Construct the primary high-conversion homepage that immediately establishes LENA's positioning as a premier AI creative studio.
 
-## Files to Modify / Create
+## Objectives
+1. Implement `HeroSection.tsx`: Background cinematic video loop, high-contrast typography, interactive audio toggle, and conversion stats ticker.
+2. Implement `FeaturedWork.tsx`: 6 featured AI video showcase cards with hover-to-play previews.
+3. Implement `ServicesSection.tsx`: Core capabilities overview with turnaround times.
+4. Implement `ProcessSection.tsx`: 4-step generative production pipeline.
+5. Implement `TestimonialsSection.tsx`: Client endorsements and ROI metrics.
+6. Implement `CTASection.tsx`: High-impact lead acquisition banner.
+
+## Allowed Files
 - `src/app/page.tsx`
-- `src/components/home/HeroSection.tsx`
-- `src/components/home/FeaturedWork.tsx`
-- `src/components/home/ServicesSection.tsx`
-- `src/components/home/ProcessSection.tsx`
-- `src/components/home/TestimonialsSection.tsx`
-- `src/components/home/CTASection.tsx`
+- `src/components/home/*`
 
 ## Acceptance Criteria
-- Hero video loops cleanly with ambient audio toggle.
-- Featured work showcases 6 projects with hover previews and lightbox viewer.
-- Layout is responsive across mobile, tablet, and desktop viewports.
+- Hero video plays smoothly on desktop and mobile.
+- Audio toggle functions cleanly without autoplay policy errors.
+- Ticker stats display social proof and turnaround metrics.
