@@ -11,3 +11,4 @@
   - *YouTube / Vimeo embeds only:* Non-customizable branding, third-party tracking scripts, slower rendering.
 - **Consequences:** Near-instant initial page loads, fluid hover preview interactions, and minimal bandwidth consumption.
 - **Date:** 2026-09-22
+

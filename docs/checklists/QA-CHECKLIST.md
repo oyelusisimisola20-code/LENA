@@ -1,0 +1,24 @@
+# QA CHECKLIST
+
+- [x] **Cross-Browser Verification:** Verified on Chromium (Chrome, Edge), Firefox, and WebKit (Safari).
+- [x] **Responsive Viewports:**
+  - [x] Mobile (375px - 640px): Mobile drawer navigation, stacked layout, vertical video aspect ratios.
+  - [x] Tablet (768px - 1024px): 2-column project grids, responsive modals.
+  - [x] Desktop (1280px - 1920px+): 3-column project grids, full cinematic hero experience.
+- [x] **Video Player Behavior:**
+  - [x] Video preview loops muted without audio pops.
+  - [x] Lightbox modal opens instantly on click.
+  - [x] Fullscreen, play/pause, and mute toggles work flawlessly.
+  - [x] Keyboard shortcuts: ESC closes modal, Space toggles playback.
+- [x] **Search & Category Filters:**
+  - [x] Real-time category filtering (All, AI Ads, Product Videos, UGC, Cinematic, Social, Animation).
+  - [x] Accurate count badges.
+- [x] **Contact & Inquiries Form:**
+  - [x] Project type selection toggles.
+  - [x] Budget bracket selection.
+  - [x] Required field validation and success confirmation state.
+  - [x] Direct channel links (WhatsApp, Calendly, LinkedIn, Email) properly routed.
+- [x] **Accessibility & Contrast:**
+  - [x] High-contrast text against dark obsidian background.
+  - [x] Focus states on interactive buttons and inputs.
+  - [x] `aria-label` attributes on icon buttons.

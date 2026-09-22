@@ -80,3 +80,4 @@ export interface Project {
 - **Build Command:** `npm run build`
 - **Publish Directory:** `.next` (or `out` if static export).
 - **Environment Support:** Zero-config runtime fallback with custom header configurations in `netlify.toml` for aggressive static asset caching (`Cache-Control: public, max-age=31536000, immutable`).
+

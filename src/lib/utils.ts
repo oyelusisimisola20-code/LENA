@@ -8,3 +8,4 @@ export function cn(...inputs: ClassValue[]) {
 export function formatDuration(duration: string): string {
   return duration;
 }
+

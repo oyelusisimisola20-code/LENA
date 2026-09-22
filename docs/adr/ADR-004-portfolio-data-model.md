@@ -8,3 +8,4 @@
   - *Hardcoded JSX:* Extremely brittle, error-prone, and violates separation of concerns.
 - **Consequences:** Adding a new project is as simple as adding an entry to `projects.json`. Type safety guarantees all required fields (thumbnails, video URLs, categories, tools) are validated at build time.
 - **Date:** 2026-09-22
+

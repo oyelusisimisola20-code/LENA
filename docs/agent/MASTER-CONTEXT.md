@@ -14,3 +14,4 @@
 - **Animations:** Framer Motion
 - **Data:** Decoupled JSON schemas in `src/data/`
 - **Hosting:** Netlify
+

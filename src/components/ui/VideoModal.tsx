@@ -175,3 +175,4 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
     </div>
   );
 }
+

@@ -9,3 +9,4 @@
   - *Astro:* Excellent for static content, but Next.js provides superior React ecosystem ergonomics for rich interactive components (video players, modals, filters).
 - **Consequences:** Provides pre-rendered static performance, clean file-based routing, native image optimization, and type safety across the entire application.
 - **Date:** 2026-09-22
+

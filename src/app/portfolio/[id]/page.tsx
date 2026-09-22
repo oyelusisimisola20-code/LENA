@@ -293,3 +293,4 @@ export default function ProjectDetailPage({ params }: Props) {
     </div>
   );
 }
+

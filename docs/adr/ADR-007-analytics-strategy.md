@@ -11,3 +11,4 @@
   - `social_channel_click`
 - **Consequences:** Clean conversion telemetry without sacrificing user privacy or page performance.
 - **Date:** 2026-09-22
+

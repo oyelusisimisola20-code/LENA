@@ -45,3 +45,4 @@ Initiate Project Inquiry / Schedule Call (/contact)
 - **Responsiveness:** Flawless layout adaptivity across mobile (320px+), tablet, desktop, and ultra-wide displays (4K).
 - **SEO & Social Sharing:** Dynamic OpenGraph tags, semantic HTML5, valid Schema.org JSON-LD (CreativeWork, VideoObject, Organization).
 - **Accessibility:** WCAG 2.1 AA compliant color contrast, keyboard navigable modals and controls, `aria-label`s on media players.
+

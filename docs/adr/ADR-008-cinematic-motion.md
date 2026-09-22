@@ -10,3 +10,4 @@
 - **Rules of Restraint:** Avoid heavy particle canvas loops, complex cursor followers, or slow artificial page loaders that impede immediate exploration.
 - **Consequences:** Ultra-smooth 60fps experience across desktop and mobile while conveying a premium cinematic feel.
 - **Date:** 2026-09-22
+

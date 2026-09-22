@@ -8,3 +8,4 @@
   - *Vercel:* Great for Next.js, but user specified Netlify as primary target in the project requirements.
 - **Consequences:** Zero-maintenance automated deployments, preview links for client review, and sub-100ms global TTFB (Time to First Byte).
 - **Date:** 2026-09-22
+

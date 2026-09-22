@@ -7,3 +7,4 @@
 4. **Clean TypeScript:** Zero `any` escapes without documented rationale. Full interfaces for all data structures.
 5. **No unnecessary external dependencies:** Keep package bundle lean and fast.
 6. **Ensure Netlify compatibility:** Test static builds cleanly (`npm run build`).
+

@@ -22,3 +22,4 @@ export function GlassCard({ className, glow = false, hoverEffect = true, childre
     </div>
   );
 }
+

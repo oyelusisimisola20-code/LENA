@@ -9,3 +9,4 @@
 - [x] Interactive video lightbox modal with backdrop blur and responsive video container.
 - [x] Inquiries/contact section includes project type multi-select and budget tier selector.
 - [x] Typography scales smoothly across viewports without overflow.
+

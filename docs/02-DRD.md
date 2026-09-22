@@ -52,3 +52,4 @@
 - **Enter Transitions:** `fade-in-up` with staggered delays (`50ms - 150ms`).
 - **Video Scrub / Preview:** Instant 150ms crossfade on hover.
 - **Micro-Interactions:** Subtle button click ripples and smooth accordion animations for FAQs.
+

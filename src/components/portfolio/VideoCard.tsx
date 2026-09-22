@@ -160,3 +160,4 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
     </div>
   );
 }
+

@@ -15,3 +15,4 @@
 - [x] Category filtering accurately updates project grid in real time.
 - [x] Netlify configuration and build passes without errors.
 - [x] Lighthouse optimization (lazy loading, optimized SVG/WebP assets, semantic HTML).
+
