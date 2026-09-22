@@ -1,0 +1,164 @@
+[
+  {
+    "id": "srv-ai-video-production",
+    "title": "AI Video Production",
+    "slug": "ai-video-production",
+    "tagline": "Cinematic high-concept video production powered by generative AI.",
+    "description": "Full-cycle cinematic video production for brands, directors, and agencies. We transform creative briefs, concepts, and storyboards into broadcast-grade visual films without the multi-million dollar overhead of physical camera crews and exotic locations.",
+    "deliverables": [
+      "Full 4K Ultra-HD Master Video",
+      "Custom Cinematic Color Grading",
+      "Multitrack Sound Design & Atmospheric Foley",
+      "Synthesized or Real Voiceover Integration",
+      "16:9, 9:16, and 1:1 Aspect Ratio Formats",
+      "Licensed Music & Audio Mix"
+    ],
+    "useCases": [
+      "Brand Anthem Films & Mission Trailers",
+      "High-Concept Product Commercials",
+      "Concept Visuals for Agency Pitches",
+      "Narrative Sci-Fi & Speculative Short Films"
+    ],
+    "toolsUsed": ["Google Veo", "Runway Gen-3", "Kling AI", "ElevenLabs", "CapCut Pro"],
+    "sampleProjectIds": ["project-001", "project-002", "project-006"],
+    "turnaroundTime": "5 – 10 Business Days",
+    "featured": true
+  },
+  {
+    "id": "srv-ai-advertising",
+    "title": "AI Advertising & Commercials",
+    "slug": "ai-advertising",
+    "tagline": "High-converting commercial spots engineered to dominate paid feeds.",
+    "description": "Stop the scroll with visual hooks and CGI-grade advertisements tailored specifically for high ROAS on Meta Ads, TikTok, YouTube Pre-roll, and programmatic video networks.",
+    "deliverables": [
+      "A/B Testing Hook Variations (First 3 Seconds)",
+      "High-Resolution Call-to-Action Endcards",
+      "Dynamic Kinetic Typography & Captions",
+      "Multiple Platform Cuts (Story/Reel/Landscape)"
+    ],
+    "useCases": [
+      "Direct-to-Consumer Product Launches",
+      "App Install Performance Campaigns",
+      "Seasonal Promotional Sales & Events",
+      "B2B Tech & SaaS Platform Explainers"
+    ],
+    "toolsUsed": ["Kling AI", "Runway Gen-3", "Higgsfield", "ElevenLabs"],
+    "sampleProjectIds": ["project-001", "project-004", "project-010", "project-016"],
+    "turnaroundTime": "3 – 7 Business Days",
+    "featured": true
+  },
+  {
+    "id": "srv-ai-product-videos",
+    "title": "AI Product Videos & 3D Visuals",
+    "slug": "ai-product-videos",
+    "tagline": "Hyper-detailed macro fluid dynamics, exploded views, and zero-G reveals.",
+    "description": "Showcase your physical or digital products in impossible environments. We integrate your actual product geometry, labels, and bottle contours into zero-gravity vacuums, liquid crystal explosions, and hyper-luxury lighting setups.",
+    "deliverables": [
+      "360-Degree Fluid Dynamic Reveal",
+      "Exploded Mechanism / Ingredient Breakdown",
+      "Macro Texture & Material Light Catchers",
+      "E-Commerce & Amazon Hero Video Assets"
+    ],
+    "useCases": [
+      "Luxury Fragrances & Cosmetics",
+      "Consumer Hardware & Tech Gadgets",
+      "Premium Beverages & Spirits",
+      "Footwear & Streetwear Collections"
+    ],
+    "toolsUsed": ["Runway Gen-3", "Google Veo", "Kling AI", "Photoshop AI"],
+    "sampleProjectIds": ["project-003", "project-008", "project-013"],
+    "turnaroundTime": "4 – 8 Business Days",
+    "featured": true
+  },
+  {
+    "id": "srv-ai-ugc",
+    "title": "AI UGC (User Generated Content)",
+    "slug": "ai-ugc",
+    "tagline": "Scalable, authentic digital creator personas for organic-style ad conversion.",
+    "description": "Eliminate creator outreach bottlenecks, missed shipping deadlines, and inconsistent creator lighting. We generate realistic AI personas that speak directly to your audience, review products with natural cadence, and drive high-converting social proof.",
+    "deliverables": [
+      "Multi-Persona Demographic Variations",
+      "Natural Native Lip-Sync & Facial Expressions",
+      "Split-Screen B-Roll with Unboxing Graphics",
+      "Hook-Engineered First 3 Seconds"
+    ],
+    "useCases": [
+      "TikTok & Instagram Paid Spark Ads",
+      "Beauty & Skincare Routine Reviews",
+      "Mobile App Onboarding & Testimonials",
+      "Health & Supplement Conversion Ads"
+    ],
+    "toolsUsed": ["Seedance", "ElevenLabs", "Kling AI", "CapCut Pro"],
+    "sampleProjectIds": ["project-005", "project-011"],
+    "turnaroundTime": "2 – 5 Business Days",
+    "featured": true
+  },
+  {
+    "id": "srv-cinematic-ai-films",
+    "title": "Cinematic AI Films & Trailers",
+    "slug": "cinematic-ai-films",
+    "tagline": "Immersive narrative world-building, sci-fi concepts, and festival-grade shorts.",
+    "description": "For visionary storytellers, film directors, and game developers. We craft cinematic trailers, speculative fiction shorts, and visual pitch reels with emotional depth, intricate atmosphere, and consistent character continuity.",
+    "deliverables": [
+      "Cinematic Trailer / Short Film Master (4K)",
+      "Character Consistency & Concept Art Dossier",
+      "Original Orchestral / Synth Atmospheric Score",
+      "Full Teaser Cuts for Social Teasing"
+    ],
+    "useCases": [
+      "Video Game Concept Trailers & Cinematic Intros",
+      "Sci-Fi / Fantasy Novel Book Trailers",
+      "Film Pitch Decks & Proof of Concepts",
+      "Digital Art Exhibitions & Film Festivals"
+    ],
+    "toolsUsed": ["Google Veo", "Runway Gen-3", "ElevenLabs", "Fish Audio"],
+    "sampleProjectIds": ["project-002", "project-006", "project-014"],
+    "turnaroundTime": "7 – 14 Business Days",
+    "featured": false
+  },
+  {
+    "id": "srv-social-media-content",
+    "title": "Social Media Velocity Packs",
+    "slug": "social-media-content",
+    "tagline": "High-velocity vertical video batches built for algorithmic momentum.",
+    "description": "Feed the Instagram, TikTok, and YouTube Shorts algorithm with high-impact, aesthetic AI video content delivered in monthly batch packages.",
+    "deliverables": [
+      "Batch of 8 – 20 Vertical Videos (9:16)",
+      "Trending Audio & Sound Mixes",
+      "High-Engagement Captions & On-Screen Typography",
+      "Custom Thumbnail Cover Frames"
+    ],
+    "useCases": [
+      "Brand Organic Social Feeds",
+      "Creator Brand Growth & Viral Loops",
+      "Event & Nightlife Promo Hype Videos",
+      "Trend Jacking & Visual Memes"
+    ],
+    "toolsUsed": ["Kling AI", "Higgsfield", "CapCut Pro", "Fish Audio"],
+    "sampleProjectIds": ["project-009", "project-015"],
+    "turnaroundTime": "3 – 6 Business Days",
+    "featured": false
+  },
+  {
+    "id": "srv-custom-ai-projects",
+    "title": "Custom AI Video Engagements",
+    "slug": "custom-ai-projects",
+    "tagline": "Bespoke R&D, interactive visual installations, and custom workflow consulting.",
+    "description": "Have a project that defies traditional categorization? From live concert visual backdrops to interactive brand installations, we design custom generative AI pipelines to realize impossible ideas.",
+    "deliverables": [
+      "Custom Generative Model LoRA / Fine-Tuning",
+      "Custom Pipeline Architecture & Delivery",
+      "Dedicated Creative Direction & Priority Revisions"
+    ],
+    "useCases": [
+      "Music Concert & Stage Visual Backdrops",
+      "Experimental Fashion Runways",
+      "Metaverse & Virtual World Assets",
+      "Enterprise AI Creative Strategy"
+    ],
+    "toolsUsed": ["Runway Gen-3", "Google Veo", "Kling AI", "Custom Diffusion Workflows"],
+    "sampleProjectIds": ["project-007", "project-012"],
+    "turnaroundTime": "Custom Scope",
+    "featured": false
+  }
+]

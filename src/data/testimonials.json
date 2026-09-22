@@ -1,0 +1,42 @@
+[
+  {
+    "id": "test-001",
+    "clientName": "Julian Vance",
+    "role": "VP of Brand Creative",
+    "company": "Aethelgard Horology",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80",
+    "quote": "LENA produced our flagship timepiece reveal in 6 days. A traditional CGI house quoted us $45,000 and 8 weeks for comparable physics and lighting quality. The results blew our board of directors away.",
+    "projectType": "Luxury AI Commercial",
+    "rating": 5
+  },
+  {
+    "id": "test-002",
+    "clientName": "Seraphina Lin",
+    "role": "Chief Marketing Officer",
+    "company": "Lumina Dermaceuticals",
+    "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=200&q=80",
+    "quote": "The fluid simulation and cellular micro-droplets LENA engineered generated a 4.8x ROAS on Meta ads in our first month. The aesthetic was so premium our customers thought we filmed it in a million-dollar studio.",
+    "projectType": "Product Video & Paid Ad Suite",
+    "rating": 5
+  },
+  {
+    "id": "test-003",
+    "clientName": "Marcus Thorne",
+    "role": "Creative Director",
+    "company": "Solaris Mobility",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80",
+    "quote": "The automotive reveal film captured the exact cyberpunk atmosphere we envisioned. LENA's mastery of Google Veo and motion prompt pacing is unmatched in the generative video industry.",
+    "projectType": "Cinematic Hypercar Trailer",
+    "rating": 5
+  },
+  {
+    "id": "test-004",
+    "clientName": "Elena Rostova",
+    "role": "Growth Lead",
+    "company": "Maison Aura",
+    "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=200&q=80",
+    "quote": "We generated over 3,200 perfume sales off the AI UGC hooks LENA crafted for TikTok. Fast turnaround, pristine lip-sync, and zero creator drama. We are now on a monthly retainer.",
+    "projectType": "Viral AI UGC Campaign",
+    "rating": 5
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Google Veo",
+    "category": "Video Generation",
+    "badge": "High Definition & Consistency",
+    "description": "High-fidelity cinematic generation, global illumination, and spatial consistency for complex architectural and automotive motion."
+  },
+  {
+    "name": "Kling AI",
+    "category": "Video Generation",
+    "badge": "Hyper-Kinetic Motion",
+    "description": "Unrivaled physical dynamics, complex character choreography, and high-speed fluid simulations."
+  },
+  {
+    "name": "Runway Gen-3 Alpha",
+    "category": "Video Generation",
+    "badge": "Cinematic Camera Control",
+    "description": "Precision camera motion brushes, depth-mapped transitions, and macro photorealism."
+  },
+  {
+    "name": "Higgsfield AI",
+    "category": "Video Generation",
+    "badge": "Character & Fashion Dynamics",
+    "description": "Realistic cloth physics, model stride mechanics, and stylized fashion photography in motion."
+  },
+  {
+    "name": "Seedance AI",
+    "category": "Video Generation",
+    "badge": "Conversational UGC & Lip-Sync",
+    "description": "Realistic human digital personas, native multi-language lip synchronization, and micro-facial expressions."
+  },
+  {
+    "name": "ElevenLabs",
+    "category": "Audio & Voice",
+    "badge": "Broadcast AI Voiceover",
+    "description": "Hyper-expressive voice design, emotional pacing, multi-speaker dialogue, and foley sound effects generation."
+  },
+  {
+    "name": "Fish Audio",
+    "category": "Audio & Voice",
+    "badge": "Atmospheric Scoring",
+    "description": "Neural music generation, custom ambient synth pads, and high-energy electronic soundscapes."
+  },
+  {
+    "name": "CapCut Pro & DaVinci",
+    "category": "Post-Production & VFX",
+    "badge": "Mastering & Color Grading",
+    "description": "Anamorphic aspect ratio formatting, dynamic kinetic typography, color mastering, and 60fps frame interpolation."
+  }
+]
