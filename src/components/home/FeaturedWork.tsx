@@ -34,7 +34,7 @@ export function FeaturedWork({ projects }: FeaturedWorkProps) {
             href="/portfolio"
             className="inline-flex items-center gap-2 text-sm font-semibold text-brand-cyan hover:text-cyan-300 transition-colors group"
           >
-            <span>View All 16+ Projects</span>
+            <span>View All {projects.length} Projects</span>
             <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
           </Link>
         </div>

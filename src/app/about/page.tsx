@@ -57,16 +57,17 @@ export default function AboutPage() {
           <div className="lg:col-span-5 relative">
             <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-white/15 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
               <Image
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=1000&q=80"
-                alt="LENA Creative Studio"
+                src="/images/lena_portrait.jpg"
+                alt="LENA — Creative Director & Founder"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/20 to-transparent opacity-90" />
               <div className="absolute bottom-6 inset-x-6">
-                <span className="text-xs font-mono uppercase text-brand-cyan">Creative Director</span>
-                <h3 className="text-xl font-bold text-white">LENA</h3>
-                <p className="text-xs text-neutral-secondary mt-0.5">AI Filmmaker & Creative Director</p>
+                <span className="text-xs font-mono uppercase text-brand-cyan tracking-wider">Founder & Creative Director</span>
+                <h3 className="text-2xl font-bold text-white">LENA</h3>
+                <p className="text-xs text-neutral-secondary mt-1">AI Filmmaker & Commercial Visual Artist</p>
               </div>
             </div>
           </div>

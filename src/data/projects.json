@@ -10,7 +10,7 @@
     "previewVideo": "/videos/gig_video.mp4",
     "fullVideo": "/videos/gig_video.mp4",
     "aspectRatio": "16:9",
-    "duration": "1:00",
+    "duration": "0:28",
     "client": "LENA Creative Studio",
     "year": "2026",
     "summary": "The official master showreel showcasing hyper-realistic AI commercials, cinematic camera choreography, fluid simulations, and visual effects.",
@@ -49,8 +49,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/3d_quantum_lift.mp4",
     "fullVideo": "/videos/3d_quantum_lift.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:45",
+    "aspectRatio": "9:16",
+    "duration": "0:25",
     "client": "Quantum Dynamics",
     "year": "2026",
     "summary": "Precision 3D particle simulation, exploded mechanical physics, and zero-G structural motion.",
@@ -87,8 +87,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1507473885765-e6ed057f782c?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/air_purifier.mp4",
     "fullVideo": "/videos/air_purifier.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:35",
+    "aspectRatio": "9:16",
+    "duration": "0:13",
     "client": "Aero Living Labs",
     "year": "2026",
     "summary": "Simulating invisible microscopic airflow channels, HEPA vortex filtration, and minimalist architectural design.",
@@ -125,8 +125,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/Glow_Genie_7_Real.mp4",
     "fullVideo": "/videos/Glow_Genie_7_Real.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:40",
+    "aspectRatio": "9:16",
+    "duration": "0:33",
     "client": "Glow Genie Beauty",
     "year": "2026",
     "summary": "Ethereal golden hour liquid pours, botanical micro-droplets, and photorealistic cosmetic bottle illumination.",
@@ -164,173 +164,172 @@
     "thumbnail": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/fitness_band.mp4",
     "fullVideo": "/videos/fitness_band.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:45",
+    "aspectRatio": "9:16",
+    "duration": "0:14",
     "client": "Pulse Wearables",
     "year": "2026",
-    "summary": "Visualizing biometric sensor pulses, sweat-resistant silicone textures, and dynamic OLED interface displays in motion.",
-    "description": "Crafted using Kling and Google Veo with precision lighting passes across curved glass and textured wrist straps.",
+    "summary": "High-octane athlete movements synchronized with biometric holographic overlays and carbon fiber textures.",
+    "description": "Generated using Kling AI video-to-video with custom optical flow tracking and cybernetic neon particle simulations.",
     "tools": [
-      "Google Veo",
       "Kling AI",
+      "Google Veo",
       "CapCut Pro"
     ],
     "metrics": [
       {
-        "label": "Pre-Orders",
-        "value": "12,000+"
+        "label": "Click-Through",
+        "value": "6.8%"
       },
       {
-        "label": "CTR Lift",
-        "value": "+210%"
+        "label": "Completion Rate",
+        "value": "72%"
       }
     ],
     "tags": [
-      "Wearable",
       "Fitness",
-      "Tech Gadget",
-      "3D Reveal"
+      "Wearables",
+      "Hologram",
+      "Product Commercial"
     ]
   },
   {
     "id": "project-006",
-    "slug": "focus-flow-brand",
-    "title": "FOCUS FLOW — Peak Cognitive State",
-    "subtitle": "High-Energy Lifestyle & Nootropic Commercial",
+    "slug": "focusflow-workspace",
+    "title": "FOCUSFLOW — Ambient Workspace App",
+    "subtitle": "AI Spatial Productivity Commercial",
     "category": "AI Ads",
     "featured": true,
     "thumbnail": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/FOCUSfLOW.mp4",
     "fullVideo": "/videos/FOCUSfLOW.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:35",
-    "client": "FocusFlow Labs",
+    "aspectRatio": "9:16",
+    "duration": "0:23",
+    "client": "FocusFlow Spatial",
     "year": "2026",
-    "summary": "Fast-paced kinetic transitions, neural synapse animations, and urban flow states engineered for high retention.",
-    "description": "Built using Kling AI with Higgsfield motion tracking. Audio engineered with ElevenLabs voiceover and synth soundtrack.",
+    "summary": "Cinematic depth of field, warm architectural lighting, and ambient floating glass UI elements.",
+    "description": "Combining Midjourney v6 conceptual keys with Kling AI camera track extensions for seamless focus transitions.",
     "tools": [
+      "Midjourney v6",
       "Kling AI",
-      "Higgsfield",
       "ElevenLabs",
       "CapCut Pro"
     ],
     "metrics": [
       {
-        "label": "TikTok Views",
-        "value": "3.8M"
+        "label": "App Installs",
+        "value": "32,000+"
       },
       {
-        "label": "Conversion Rate",
-        "value": "8.2%"
+        "label": "Cost Per Install",
+        "value": "$1.40"
       }
     ],
     "tags": [
-      "High Energy",
-      "Commercial",
-      "Lifestyle",
-      "Beverage"
+      "Software",
+      "SaaS",
+      "Ambient",
+      "Workspace"
     ]
   },
   {
     "id": "project-007",
-    "slug": "nanobrush-demo",
-    "title": "NANO-BRUSH — Micro-Sonic Dental Tech",
-    "subtitle": "Ultrasonic Wave & Bristle Simulation",
+    "slug": "nanobrush-sonic",
+    "title": "NANOBRUSH — Ultrasonic Micro-Bristle",
+    "subtitle": "4K Microscopic Engineering Commercial",
     "category": "Product Videos",
     "featured": false,
     "thumbnail": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/DEMO_FOR_NANObrush.mp4",
     "fullVideo": "/videos/DEMO_FOR_NANObrush.mp4",
     "aspectRatio": "16:9",
-    "duration": "0:45",
-    "client": "NanoSonic Oral",
+    "duration": "0:12",
+    "client": "NanoTech Personal Care",
     "year": "2026",
-    "summary": "Extreme macro simulation of 40,000 VPM sonic vibrations, water droplet cavitation, and micro-bristle motion.",
-    "description": "Rendered with Runway Gen-3 and Kling AI using micro depth-of-field control.",
+    "summary": "Zooming deep into carbon bristles, fluid hydrodynamic cavitation, and molecular plaque dispersion.",
+    "description": "Multi-layered Kling AI and Runway macro zooms calibrated for ultra-clean industrial product cinematography.",
+    "tools": [
+      "Kling AI",
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Product Reveal",
+      "Macro",
+      "4K",
+      "Innovation"
+    ]
+  },
+  {
+    "id": "project-008",
+    "slug": "raffaella-couture",
+    "title": "RAFFAELLA — Haute Couture Parisienne",
+    "subtitle": "Digital Runway & Luxury Fashion Reel",
+    "category": "AI Ads",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/RAFFaELLA_update.mp4",
+    "fullVideo": "/videos/RAFFaELLA_update.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:21",
+    "client": "Maison Raffaella",
+    "year": "2026",
+    "summary": "Silk billows in zero-gravity marble atriums with hyper-detailed fabric thread physics.",
+    "description": "Generated using Kling AI persona preservation and Runway Gen-3 motion brush for fluid silk simulation.",
     "tools": [
       "Runway Gen-3",
       "Kling AI",
       "CapCut Pro"
     ],
     "tags": [
-      "Oral Care",
-      "Macro",
-      "Product Demo",
-      "Sonic Tech"
-    ]
-  },
-  {
-    "id": "project-008",
-    "slug": "raffaella-couture",
-    "title": "RAFFAELLA — Haute Couture AI Film",
-    "subtitle": "High Fashion & Digital Garment Runway",
-    "category": "Cinematic",
-    "featured": false,
-    "thumbnail": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1200&q=80",
-    "previewVideo": "/videos/RAFFaELLA_update.mp4",
-    "fullVideo": "/videos/RAFFaELLA_update.mp4",
-    "aspectRatio": "16:9",
-    "duration": "1:10",
-    "client": "Maison Raffaella",
-    "year": "2026",
-    "summary": "Haute couture models donning iridescent, silk-fluid garments walking a minimalist obsidian runway.",
-    "description": "Created with Higgsfield and Kling AI for authentic fabric drape, catwalk strides, and high-fashion editorial lighting.",
-    "tools": [
-      "Higgsfield",
-      "Kling AI",
-      "Fish Audio",
-      "CapCut Pro"
-    ],
-    "tags": [
       "Fashion",
-      "Runway",
-      "Haute Couture",
-      "Cinematic"
+      "Luxury",
+      "Editorial",
+      "Haute Couture"
     ]
   },
   {
     "id": "project-009",
-    "slug": "fit4-extreme-performance",
-    "title": "FIT4 — Unleash The Velocity",
-    "subtitle": "Athletic Performance Commercial",
+    "slug": "fit4-athletic",
+    "title": "FIT4 — High-Intensity Energy Surge",
+    "subtitle": "Athletic Performance & Nutrition Spot",
     "category": "AI Ads",
     "featured": false,
     "thumbnail": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/FIT4.mp4",
     "fullVideo": "/videos/FIT4.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:30",
-    "client": "Fit4 Apparel",
+    "aspectRatio": "9:16",
+    "duration": "0:21",
+    "client": "FIT4 Nutrition Global",
     "year": "2026",
-    "summary": "Kinetic sprint tracking, muscle fiber tension visualization, and high-intensity workout choreography.",
-    "description": "Produced with Kling AI and ElevenLabs for heavy bass impact and dynamic athletic transitions.",
+    "summary": "Fast-cut explosive athlete training shots, sweat particle spray, and kinetic typography hooks.",
+    "description": "Accelerated motion pacing utilizing Runway Gen-3 speed ramping and Google Veo cinematic lighting.",
     "tools": [
-      "Kling AI",
-      "ElevenLabs",
+      "Google Veo",
+      "Runway Gen-3",
       "CapCut Pro"
     ],
     "tags": [
       "Fitness",
-      "Athletics",
       "Commercial",
-      "Adrenaline"
+      "Fast Cut",
+      "Action"
     ]
   },
   {
     "id": "project-010",
-    "slug": "packing-cubes-system",
-    "title": "MODULAR VOYAGE — Compression Gear",
-    "subtitle": "Smart Travel Gear & UGC Ad Campaign",
+    "slug": "packing-cubes-travel",
+    "title": "AEROLITE CUBES — Modular Travel Organizers",
+    "subtitle": "TikTok Viral Product Demonstration Ad",
     "category": "UGC",
     "featured": false,
     "thumbnail": "https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/packing_cubes_2nd_draft.mp4",
     "fullVideo": "/videos/packing_cubes_2nd_draft.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:50",
-    "client": "Voyage Gear Co",
+    "aspectRatio": "9:16",
+    "duration": "0:34",
+    "client": "Nomad Gear Co.",
     "year": "2026",
-    "summary": "High-converting UGC demonstration of space-saving luggage organization and zipper compression physics.",
+    "summary": "Compression zipper mechanics, suitcase spatial packing layout, and real-time travel hack hooks.",
     "description": "Engineered with Seedance persona avatars and Kling AI for authentic unboxing and packing demonstrations.",
     "tools": [
       "Seedance",
@@ -340,52 +339,52 @@
     "tags": [
       "UGC",
       "Travel",
-      "Product Demo",
-      "E-Commerce"
+      "E-Commerce",
+      "TikTok Ad"
     ]
   },
   {
     "id": "project-011",
     "slug": "dunamis-cinematic",
-    "title": "DUNAMIS — The Power Within",
-    "subtitle": "Epic Brand Anthem & Visual Journey",
+    "title": "DUNAMIS — Awakening the Inner Fire",
+    "subtitle": "Epic Narrative Teaser & Visual Opus",
     "category": "Cinematic",
     "featured": false,
     "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/DUNNAMIS_F.mp4",
     "fullVideo": "/videos/DUNNAMIS_F.mp4",
-    "aspectRatio": "16:9",
-    "duration": "1:20",
-    "client": "Dunamis Global",
+    "aspectRatio": "9:16",
+    "duration": "0:44",
+    "client": "Dunamis Productions",
     "year": "2026",
-    "summary": "A sweeping cinematic odyssey traversing volcanic peaks, deep space nebula vistas, and cybernetic cities.",
-    "description": "Developed with Google Veo and Runway Gen-3 with custom orchestral score integration.",
+    "summary": "Mystical volcanic obsidian landscapes, ember storms, and mythical character transformations.",
+    "description": "Produced using Google Veo and Runway Gen-3 with custom orchestral scoring and atmospheric depth.",
     "tools": [
       "Google Veo",
       "Runway Gen-3",
-      "Fish Audio",
+      "ElevenLabs",
       "CapCut Pro"
     ],
     "tags": [
       "Cinematic",
-      "Brand Anthem",
-      "Epic",
-      "Sci-Fi"
+      "Fantasy",
+      "Trailer",
+      "VFX"
     ]
   },
   {
     "id": "project-012",
-    "slug": "adp-finale-reveal",
-    "title": "ADP HORIZON — Enterprise Brand Campaign",
-    "subtitle": "Next-Gen Corporate & Innovation Visuals",
-    "category": "AI Ads",
+    "slug": "adp-corporate-vision",
+    "title": "ADP HORIZON — The Architecture of Work",
+    "subtitle": "Global Enterprise Anthem Film",
+    "category": "Cinematic",
     "featured": false,
     "thumbnail": "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/ADP_FINALE.mp4",
     "fullVideo": "/videos/ADP_FINALE.mp4",
-    "aspectRatio": "16:9",
-    "duration": "1:05",
-    "client": "ADP International",
+    "aspectRatio": "9:16",
+    "duration": "0:31",
+    "client": "ADP Technologies",
     "year": "2026",
     "summary": "Sleek architectural glass corporate metropolises, quantum data streams, and executive vision storytelling.",
     "description": "Crafted using Google Veo and Kling AI for photorealistic reflections, glass refractions, and corporate elegance.",
@@ -412,8 +411,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/dental_latest.mp4",
     "fullVideo": "/videos/dental_latest.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:30",
+    "aspectRatio": "9:16",
+    "duration": "0:11",
     "client": "Luminous Health",
     "year": "2026",
     "summary": "Clear medical-grade fluid dynamics, sparkling enamel light refractions, and high-tech sonic wand motion.",
@@ -440,8 +439,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/demo_video_chris.mp4",
     "fullVideo": "/videos/demo_video_chris.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:45",
+    "aspectRatio": "9:16",
+    "duration": "0:28",
     "client": "Direct Creator Network",
     "year": "2026",
     "summary": "Hyper-realistic AI creator personas speaking with organic rhythm and micro-facial authenticity.",
@@ -468,7 +467,7 @@
     "thumbnail": "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/0315_1_.mp4",
     "fullVideo": "/videos/0315_1_.mp4",
-    "aspectRatio": "16:9",
+    "aspectRatio": "9:16",
     "duration": "0:25",
     "client": "Velocity Media",
     "year": "2026",
@@ -495,8 +494,8 @@
     "thumbnail": "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&w=1200&q=80",
     "previewVideo": "/videos/0406__2_.mp4",
     "fullVideo": "/videos/0406__2_.mp4",
-    "aspectRatio": "16:9",
-    "duration": "0:45",
+    "aspectRatio": "9:16",
+    "duration": "1:07",
     "client": "Digital Horizon Gallery",
     "year": "2026",
     "summary": "Surreal geometric morphogenesis and continuous fluid-matter transitions.",
@@ -511,6 +510,492 @@
       "Generative Art",
       "Latent Space",
       "Surreal"
+    ]
+  },
+  {
+    "id": "project-017",
+    "slug": "aura-cinema-anthology",
+    "title": "AURA CINEMA — Master Generative Anthology",
+    "subtitle": "Extended Feature AI Cinematic Journey",
+    "category": "Cinematic",
+    "featured": true,
+    "thumbnail": "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0517.mp4",
+    "fullVideo": "/videos/0517.mp4",
+    "aspectRatio": "9:16",
+    "duration": "2:55",
+    "client": "Studio Aura International",
+    "year": "2026",
+    "summary": "A sweeping 3-minute magnum opus blending photorealistic character journeys, celestial architectures, and high-drama narrative arcs.",
+    "description": "Rendered at 4K UHD across 80+ generative diffusion passes using Google Veo, Runway Gen-3, and Kling AI. Fully scored with binaural atmospheric soundscapes.",
+    "tools": [
+      "Google Veo",
+      "Runway Gen-3",
+      "Kling AI",
+      "ElevenLabs",
+      "Logic Pro X"
+    ],
+    "metrics": [
+      {
+        "label": "Anthology Runtime",
+        "value": "2m 55s"
+      },
+      {
+        "label": "Neural Prompts",
+        "value": "140+ Prompts"
+      }
+    ],
+    "tags": [
+      "Feature",
+      "Cinematic",
+      "Masterpiece",
+      "Storytelling"
+    ]
+  },
+  {
+    "id": "project-018",
+    "slug": "chronos-sci-fi-epic",
+    "title": "CHRONOS — The Generative Sci-Fi Epic",
+    "subtitle": "Widescreen Cinematic Narrative Trailer",
+    "category": "Cinematic",
+    "featured": true,
+    "thumbnail": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0619_3_.mp4",
+    "fullVideo": "/videos/0619_3_.mp4",
+    "aspectRatio": "16:9",
+    "duration": "1:44",
+    "client": "Chronos Motion Pictures",
+    "year": "2026",
+    "summary": "Widescreen cinematic worldbuilding featuring deep space derelict stations, gravitational warping, and high-tension character drama.",
+    "description": "Created in anamorphic 16:9 using Google Veo's high-coherence motion synthesis and custom color grading mimicking 65mm cinema stock.",
+    "tools": [
+      "Google Veo",
+      "Runway Gen-3",
+      "ElevenLabs",
+      "CapCut Pro"
+    ],
+    "metrics": [
+      {
+        "label": "Aspect Ratio",
+        "value": "2.39:1 Scope"
+      },
+      {
+        "label": "Award Nominee",
+        "value": "AI Film Fest 2026"
+      }
+    ],
+    "tags": [
+      "Sci-Fi",
+      "Cinematic",
+      "Widescreen",
+      "Epic Trailer"
+    ]
+  },
+  {
+    "id": "project-019",
+    "slug": "solaris-metaverse-worldbuilder",
+    "title": "SOLARIS METAVERSE — Virtual Worldbuilder",
+    "subtitle": "Parametric AI Architecture & Environments",
+    "category": "Animation",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/8d7cb32915e22b342e71d32dcf6ba25f_0_91233333.mp4",
+    "fullVideo": "/videos/8d7cb32915e22b342e71d32dcf6ba25f_0_91233333.mp4",
+    "aspectRatio": "16:9",
+    "duration": "1:31",
+    "client": "Solaris Labs",
+    "year": "2026",
+    "summary": "Continuous camera fly-throughs across impossible parametric glass architectures and solar megastructures.",
+    "description": "Synthesized with Kling AI advanced camera control paths and Unreal Engine neural NeRF interpolations for unbroken 90-second dynamic spatial choreography.",
+    "tools": [
+      "Kling AI",
+      "Runway Gen-3",
+      "Unreal Engine 5",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Animation",
+      "3D Worlds",
+      "Architecture",
+      "Metaverse"
+    ]
+  },
+  {
+    "id": "project-020",
+    "slug": "hyperion-dynamics-automotive",
+    "title": "HYPERION DYNAMICS — Autonomous Concept Vehicle",
+    "subtitle": "High-Speed Commercial Automotive Film",
+    "category": "AI Ads",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/e9440d797eaeae1ce19adc4126189ab5_0_57133333.mp4",
+    "fullVideo": "/videos/e9440d797eaeae1ce19adc4126189ab5_0_57133333.mp4",
+    "aspectRatio": "16:9",
+    "duration": "0:57",
+    "client": "Hyperion Motors Group",
+    "year": "2026",
+    "summary": "Aerodynamic ray-traced automotive sheet metal, neon night tunnel pursuits, and precision tire smoke dynamics.",
+    "description": "Utilized Runway Gen-3 speed ramping alongside Google Veo to capture photorealistic chrome reflections, motion blur, and acoustic engine roars.",
+    "tools": [
+      "Google Veo",
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "metrics": [
+      {
+        "label": "Commercial ROAS",
+        "value": "4.7x"
+      },
+      {
+        "label": "Target Audience",
+        "value": "EV Enthusiasts"
+      }
+    ],
+    "tags": [
+      "Automotive",
+      "Commercial",
+      "Supercar",
+      "High Speed"
+    ]
+  },
+  {
+    "id": "project-021",
+    "slug": "velvet-lumen-fashion",
+    "title": "VELVET LUMEN — Luxury High-Fashion Editorial",
+    "subtitle": "Paris Fashion Week Generative Campaign",
+    "category": "AI Ads",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0602.mp4",
+    "fullVideo": "/videos/0602.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:32",
+    "client": "Lumen Paris Couture",
+    "year": "2026",
+    "summary": "Avant-garde haute couture lighting, volumetric fog, dynamic silk drape physics, and high-fashion modeling pacing.",
+    "description": "Engineered with Kling AI persona consistency and Midjourney v6 reference boards to deliver magazine-grade fashion commercials with zero physical set costs.",
+    "tools": [
+      "Kling AI",
+      "Midjourney v6",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Fashion",
+      "Haute Couture",
+      "Editorial",
+      "Runway"
+    ]
+  },
+  {
+    "id": "project-022",
+    "slug": "vital-peptide-ugc",
+    "title": "VITAL PEPTIDE — Organic Skincare UGC Campaign",
+    "subtitle": "High-Converting D2C Creator Reels",
+    "category": "UGC",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0415.mp4",
+    "fullVideo": "/videos/0415.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:52",
+    "client": "Vital Peptide Labs",
+    "year": "2026",
+    "summary": "Authentic multi-angle creator testimonials demonstrating serum application, glowing skin texture, and unboxing satisfaction.",
+    "description": "Synthesized with Seedance facial realism and ElevenLabs emotional tone matching, driving high-converting vertical video feeds on TikTok and Instagram Reels.",
+    "tools": [
+      "Seedance",
+      "ElevenLabs",
+      "CapCut Pro"
+    ],
+    "metrics": [
+      {
+        "label": "Meta Ad Spend",
+        "value": "$120k"
+      },
+      {
+        "label": "Conversion Rate",
+        "value": "3.9%"
+      }
+    ],
+    "tags": [
+      "UGC",
+      "Skincare",
+      "TikTok Ad",
+      "D2C"
+    ]
+  },
+  {
+    "id": "project-023",
+    "slug": "kinetic-audio-acoustics",
+    "title": "KINETIC AUDIO — Spatial Acoustics Spot",
+    "subtitle": "Audiophile Sound Wave & Hardware Reveal",
+    "category": "Product Videos",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0705.mp4",
+    "fullVideo": "/videos/0705.mp4",
+    "aspectRatio": "16:9",
+    "duration": "0:35",
+    "client": "Kinetic Acoustic Labs",
+    "year": "2026",
+    "summary": "Visualizing bass frequency cymatic sand patterns, titanium driver diaphragm vibrations, and sleek anodized hardware.",
+    "description": "Rendered with Google Veo and Runway Gen-3 to achieve photorealistic acoustic wave propagation in macro close-ups.",
+    "tools": [
+      "Google Veo",
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Audio",
+      "Headphones",
+      "Acoustics",
+      "Product Video"
+    ]
+  },
+  {
+    "id": "project-024",
+    "slug": "oasis-hydration-energy",
+    "title": "OASIS HYDRATION — Organic Energy & Electrolytes",
+    "subtitle": "High-Impact Beverage Can Commercial",
+    "category": "AI Ads",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1622543925917-763c34d1a86e?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/4th_video.mp4",
+    "fullVideo": "/videos/4th_video.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:20",
+    "client": "Oasis Botanics",
+    "year": "2026",
+    "summary": "Sub-zero frost crystallization, condensation bead physics, and dynamic citrus splash bursts.",
+    "description": "Generated with Kling AI fluid dynamics and Runway Gen-3 camera zooms for a mouth-watering organic beverage promo.",
+    "tools": [
+      "Kling AI",
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Beverage",
+      "Liquid Splash",
+      "Commercial",
+      "Energy Drink"
+    ]
+  },
+  {
+    "id": "project-025",
+    "slug": "duo-blend-lifestyle",
+    "title": "DUO BLEND 2-IN-1 — Portable Lifestyle Device",
+    "subtitle": "Smart Kitchen Tech & Motion Demonstration",
+    "category": "Product Videos",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1570222094114-d054a817e56b?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/2n1.mp4",
+    "fullVideo": "/videos/2n1.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:58",
+    "client": "Modern Living Appliances",
+    "year": "2026",
+    "summary": "Exploded engineering views demonstrating vortex blades, wireless magnetic base locking, and fruit pulverization.",
+    "description": "Produced using Kling AI precision mechanical choreography and realistic kitchen environment illumination.",
+    "tools": [
+      "Kling AI",
+      "ElevenLabs",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Appliances",
+      "Kitchen",
+      "3D Exploded",
+      "Demonstration"
+    ]
+  },
+  {
+    "id": "project-026",
+    "slug": "cyber-horizon-hook-01",
+    "title": "CYBER HORIZON — Micro-Reel Hook Edition 01",
+    "subtitle": "High-Retention Vertical Feed Opener",
+    "category": "Social",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/1.mp4",
+    "fullVideo": "/videos/1.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:17",
+    "client": "Horizon Media Group",
+    "year": "2026",
+    "summary": "3-second scroll-stopping visual hook engineered to boost TikTok and Instagram algorithm watch time.",
+    "description": "Rendered with Kling AI high-framerate motion algorithms to create hyper-vibrant visual contrast and momentum.",
+    "tools": [
+      "Kling AI",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Hooks",
+      "Social",
+      "Scroll Stopper",
+      "Viral"
+    ]
+  },
+  {
+    "id": "project-027",
+    "slug": "cyber-horizon-hook-02",
+    "title": "CYBER HORIZON — Micro-Reel Hook Edition 02",
+    "subtitle": "Viral Particle Morph & Dynamic Transition",
+    "category": "Social",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/2.mp4",
+    "fullVideo": "/videos/2.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:16",
+    "client": "Horizon Media Group",
+    "year": "2026",
+    "summary": "Part 2 of the high-velocity hook series featuring fluid cybernetic transitions and optical lens flares.",
+    "description": "Synthesized with Runway Gen-3 motion brush to deliver seamless match-cuts.",
+    "tools": [
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Hooks",
+      "Social",
+      "Transitions",
+      "Short Form"
+    ]
+  },
+  {
+    "id": "project-028",
+    "slug": "neon-drift-motion-loop",
+    "title": "NEON DRIFT — Urban Cyberpunk Motion Loop",
+    "subtitle": "Rain-Slicked Sci-Fi Atmosphere Reel",
+    "category": "Social",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0328.mp4",
+    "fullVideo": "/videos/0328.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:15",
+    "client": "NightCity Collective",
+    "year": "2026",
+    "summary": "Reflective puddle holograms, towering illuminated neon signage, and futuristic urban nocturnal aesthetics.",
+    "description": "Generated with Kling AI prompt scheduling to produce a hypnotic looping visual for social background ambiance.",
+    "tools": [
+      "Kling AI",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Cyberpunk",
+      "Neon",
+      "Ambiance",
+      "Social Loop"
+    ]
+  },
+  {
+    "id": "project-029",
+    "slug": "ai-vision-systems-optics",
+    "title": "AI VISION SYSTEMS — Intelligent Optics Commercial",
+    "subtitle": "Spatial Computing & Neural Lens Reveal",
+    "category": "AI Ads",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/aivs.mp4",
+    "fullVideo": "/videos/aivs.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:13",
+    "client": "Vision Systems AI",
+    "year": "2026",
+    "summary": "Intelligent optical refraction, eye-tracking sensor illumination, and biometric spatial overlays.",
+    "description": "Crafted using Google Veo and Kling AI for crystalline glass rendering and HUD interface integrations.",
+    "tools": [
+      "Google Veo",
+      "Kling AI",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "AI Hardware",
+      "Optics",
+      "AR",
+      "Commercial"
+    ]
+  },
+  {
+    "id": "project-030",
+    "slug": "prism-fluidic-particles",
+    "title": "PRISM FLUIDIC — Chroma Particle Transformation",
+    "subtitle": "Abstract Generative Physics & Color Dispersion",
+    "category": "Animation",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0810.mp4",
+    "fullVideo": "/videos/0810.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:09",
+    "client": "Chromatic Spectrum",
+    "year": "2026",
+    "summary": "Spectral dispersion of iridescent fluids turning into millions of illuminated floating particles.",
+    "description": "Interpolated with Runway Gen-3 latent keyframe warping for an organic, sensory visual treat.",
+    "tools": [
+      "Runway Gen-3",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Animation",
+      "Particles",
+      "Abstract",
+      "Color Shift"
+    ]
+  },
+  {
+    "id": "project-031",
+    "slug": "nebula-drift-celestial",
+    "title": "NEBULA DRIFT — 4K Celestial Atmosphere",
+    "subtitle": "Cosmic Deep-Space Particle Simulation",
+    "category": "Cinematic",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/0812.mp4",
+    "fullVideo": "/videos/0812.mp4",
+    "aspectRatio": "16:9",
+    "duration": "0:03",
+    "client": "Deep Horizon Studio",
+    "year": "2026",
+    "summary": "Stellar accretion disks, swirling galactic dust clouds, and gravitational light lensing in 4K resolution.",
+    "description": "Synthesized via Google Veo for ultra-high spatial coherence and celestial volumetric depth.",
+    "tools": [
+      "Google Veo",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Space",
+      "Cosmos",
+      "VFX",
+      "Cinematic"
+    ]
+  },
+  {
+    "id": "project-032",
+    "slug": "eclipse-titan-stinger",
+    "title": "ECLIPSE TITAN — High-Contrast Visual Stinger",
+    "subtitle": "Dynamic Brand Identity Reveal",
+    "category": "Social",
+    "featured": false,
+    "thumbnail": "https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1200&q=80",
+    "previewVideo": "/videos/5.mp4",
+    "fullVideo": "/videos/5.mp4",
+    "aspectRatio": "9:16",
+    "duration": "0:06",
+    "client": "Titan Media Lab",
+    "year": "2026",
+    "summary": "Monolithic solar eclipse silhouettes, dramatic backlight corona flares, and heavy cinematic punch.",
+    "description": "Designed as an ultra-punchy video intro/outro stinger with Kling AI high-contrast lighting.",
+    "tools": [
+      "Kling AI",
+      "CapCut Pro"
+    ],
+    "tags": [
+      "Stinger",
+      "Branding",
+      "Social",
+      "High Impact"
     ]
   }
 ]

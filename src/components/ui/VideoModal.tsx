@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { X, Play, Pause, Volume2, VolumeX, Maximize, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Project } from "@/types";
+import { cn } from "@/lib/utils";
 
 interface VideoModalProps {
   project: Project | null;
@@ -37,6 +38,8 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
   }, [isOpen, onClose]);
 
   if (!isOpen || !project) return null;
+
+  const isVertical = project.aspectRatio === "9:16";
 
   const togglePlay = () => {
     if (videoRef.current) {
@@ -74,14 +77,17 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
       />
 
       {/* Modal Container */}
-      <div className="relative z-10 w-full max-w-5xl rounded-3xl overflow-hidden bg-dark-900 border border-white/15 shadow-[0_25px_70px_rgba(0,0,0,0.8)] flex flex-col">
+      <div className={cn(
+        "relative z-10 w-full rounded-3xl overflow-hidden bg-dark-900 border border-white/15 shadow-[0_25px_70px_rgba(0,0,0,0.8)] flex flex-col transition-all",
+        isVertical ? "max-w-md sm:max-w-lg" : "max-w-5xl"
+      )}>
         {/* Top Header Bar */}
         <div className="flex items-center justify-between px-6 py-4 border-b border-white/10 bg-dark-900/80 backdrop-blur-md">
           <div className="flex items-center gap-3">
             <span className="px-2.5 py-1 text-xs rounded-full bg-brand-cyan/10 text-brand-cyan font-mono border border-brand-cyan/30">
               {project.category}
             </span>
-            <h3 className="text-base sm:text-lg font-semibold text-neutral-primary truncate max-w-md">
+            <h3 className="text-base sm:text-lg font-semibold text-neutral-primary truncate max-w-xs sm:max-w-md">
               {project.title}
             </h3>
           </div>
@@ -95,7 +101,10 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
         </div>
 
         {/* Video Player Area */}
-        <div className="relative aspect-video w-full bg-black flex items-center justify-center group">
+        <div className={cn(
+          "relative w-full bg-black flex items-center justify-center group overflow-hidden",
+          isVertical ? "aspect-[9/16] max-h-[75vh]" : "aspect-video"
+        )}>
           <video
             ref={videoRef}
             src={project.fullVideo}

@@ -31,10 +31,10 @@ export const metadata: Metadata = {
     siteName: "LENA AI Creative Studio",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80",
+        url: "/images/lena_portrait.jpg",
         width: 1200,
         height: 630,
-        alt: "LENA AI Creative Studio Showcase",
+        alt: "LENA — AI Creative Studio & Filmmaker",
       },
     ],
   },
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "LENA — AI Creative Studio",
     description: "Cinematic AI video creation, commercial ads, and visual experiences.",
-    images: ["https://images.unsplash.com/photo-1617788138017-80ad40651399?auto=format&fit=crop&w=1200&q=80"],
+    images: ["/images/lena_portrait.jpg"],
   },
   robots: {
     index: true,
