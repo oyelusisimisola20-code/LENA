@@ -12,3 +12,4 @@ Deploy the finalized LENA AI Creative Studio portfolio to Netlify Edge infrastru
 ## Acceptance Criteria
 - Production build succeeds on Netlify build servers.
 - Dynamic routes, video streaming, and sitemap operate cleanly in live preview.
+

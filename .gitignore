@@ -27,9 +27,8 @@ yarn-error.log*
 .env*.local
 
 # vercel
-.vercel
+# video binaries
+/public/videos/*.mp4
+*.html
 
-# typescript
-*.tsbuildinfo
-next-env.d.ts
 

@@ -22,12 +22,13 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
-          src="https://assets.mixkit.co/videos/preview/mixkit-futuristic-robotic-arm-moving-42617-large.mp4"
+          src="/videos/gig_video.mp4"
+          poster="/videos/gig_video-Cover.jpg"
           autoPlay
           loop
           muted
           playsInline
-          className="w-full h-full object-cover opacity-35 scale-105"
+          className="w-full h-full object-cover opacity-40 scale-105"
         />
         {/* Cinematic Vignette & Gradients */}
         <div className="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/70 to-dark-950/80" />

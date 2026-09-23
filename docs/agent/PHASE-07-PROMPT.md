@@ -15,3 +15,4 @@ Implement `/about` to establish studio credibility, showcase the creative direct
 ## Acceptance Criteria
 - Tools are categorized by Video Generation, Audio/Voice, and Post-Production.
 - FAQ section provides clear commercial terms and licensing answers.
+

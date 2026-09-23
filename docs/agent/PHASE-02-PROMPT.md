@@ -17,3 +17,4 @@ Build the global application frame including the sticky glass navigation bar, mo
 - Navigation shrinks and increases glass backdrop blur upon scrolling past 20px.
 - Mobile menu opens smoothly and closes on route change.
 - Footer displays active social channels and links.
+

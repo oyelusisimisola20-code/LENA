@@ -26,3 +26,4 @@ Initialize the technical foundation for the LENA AI Creative Studio portfolio ac
 ## Acceptance Criteria
 - `npm run build` succeeds without errors.
 - Package dependencies are cleanly installed.
+

@@ -4,6 +4,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://lenacreative.studio"),
   title: "LENA — AI Creative Studio | AI Video Creator & Filmmaker",
   description: "Futuristic AI video creation, cinematic commercial production, 3D product visuals, and generative visual storytelling for visionary brands.",
   keywords: [

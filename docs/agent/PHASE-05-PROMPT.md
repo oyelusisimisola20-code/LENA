@@ -16,3 +16,4 @@ Implement dynamic static-site-generated routes (`/portfolio/[id]`) to present de
 - All 16 project URLs are pre-rendered into static HTML.
 - Dynamic OpenGraph and Twitter card metadata generated per project.
 - 404 handler triggers if an invalid project ID is requested.
+

@@ -21,3 +21,4 @@
 - [x] Interactive quote form updates project type, budget, and timeline selections.
 - [x] Contact submission displays confirmation card with reset capability.
 - [x] Direct external links (WhatsApp, Calendly, LinkedIn, Instagram) open in new tabs with secure `rel` attributes.
+

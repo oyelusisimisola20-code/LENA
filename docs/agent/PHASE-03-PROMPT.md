@@ -19,3 +19,4 @@ Construct the primary high-conversion homepage that immediately establishes LENA
 - Hero video plays smoothly on desktop and mobile.
 - Audio toggle functions cleanly without autoplay policy errors.
 - Ticker stats display social proof and turnaround metrics.
+

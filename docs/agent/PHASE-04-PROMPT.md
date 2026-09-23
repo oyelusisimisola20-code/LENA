@@ -18,3 +18,4 @@ Build the complete portfolio archive interface allowing prospective clients to f
 - Filtering immediately updates the grid in real-time.
 - Hover previews smoothly stream without flickering or crashing the video buffer.
 - Modal opens on card click and closes on backdrop click or ESC key.
+

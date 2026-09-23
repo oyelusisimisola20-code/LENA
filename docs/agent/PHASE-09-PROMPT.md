@@ -18,3 +18,4 @@ Optimize the website for personal brand authority and commercial AI video search
 ## Acceptance Criteria
 - `/sitemap.xml` generates a valid XML response with all routes.
 - Social share preview tags render accurate titles, summaries, and images.
+

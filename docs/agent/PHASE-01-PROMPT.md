@@ -20,3 +20,4 @@ Implement the visual identity defined in `02-DRD.md`, establishing the futuristi
 - All buttons support hover glow, active scaling, and icon slots.
 - Badges support `pulse` (live beacon), `cyan`, and `amber` variants.
 - Dark theme styling adheres to WCAG AA contrast standards.
+

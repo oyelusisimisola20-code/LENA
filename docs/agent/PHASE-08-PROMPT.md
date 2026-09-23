@@ -20,3 +20,4 @@ Implement the client acquisition system on `/contact`, facilitating structured q
 - Form validates required fields before submission.
 - Confirmation screen renders cleanly after inquiry is sent.
 - Direct external links open in new tabs with appropriate `rel="noopener noreferrer"`.
+

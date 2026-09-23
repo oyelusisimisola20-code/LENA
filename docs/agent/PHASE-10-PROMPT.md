@@ -17,3 +17,4 @@ Ensure sub-second page loads, instant video hover responsiveness, and low memory
 ## Acceptance Criteria
 - First load JS remains under 120 kB shared.
 - Video preview scrubbing initiates without UI stutter.
+

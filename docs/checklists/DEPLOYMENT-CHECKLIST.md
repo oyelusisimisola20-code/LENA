@@ -21,3 +21,4 @@
 3. Domain & SSL:
    - Link custom domain (e.g. `lenacreative.studio`).
    - Netlify will automatically provision Let's Encrypt SSL certificate.
+
