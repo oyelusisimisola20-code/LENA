@@ -61,13 +61,14 @@ export function ContactForm() {
           _subject: `New Studio Project Inquiry from ${formData.name || "Client"} (${formData.projectType})`,
           _template: "table",
           _captcha: "false",
+          _replyto: formData.email,
           "Client Name": formData.name,
-          "Email Address": formData.email,
-          "Company / Project": formData.company || "Not specified",
+          "Client Email": formData.email,
+          "Company / Brand": formData.company || "Not specified",
           "Project Type": formData.projectType,
-          "Estimated Budget": formData.budget,
+          "Estimated Budget (USD)": formData.budget,
           "Delivery Timeline": formData.timeline,
-          "Project Details": formData.details,
+          "Project Vision & Scope": formData.details || "No additional notes provided.",
         }),
       });
 
