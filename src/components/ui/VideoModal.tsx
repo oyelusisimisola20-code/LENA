@@ -107,13 +107,19 @@ export function VideoModal({ project, isOpen, onClose }: VideoModalProps) {
         )}>
           <video
             ref={videoRef}
-            src={project.fullVideo}
+            src={project.fullVideo || project.previewVideo}
             poster={project.thumbnail}
             autoPlay
             playsInline
             loop
             className="w-full h-full object-contain"
             onClick={togglePlay}
+            onError={(e) => {
+              if (project.previewVideo && e.currentTarget.src !== project.previewVideo) {
+                e.currentTarget.src = project.previewVideo;
+                e.currentTarget.play().catch(() => {});
+              }
+            }}
           />
 
           {/* Custom Overlay Controls (Visible on mobile, hover on desktop) */}

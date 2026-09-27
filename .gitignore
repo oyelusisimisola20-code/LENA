@@ -32,8 +32,10 @@ yarn-error.log*
 .env.production.local
 
 # vercel
-# video binaries
+# video binaries (ignore heavy raw sources, allow faststart previews)
 /public/videos/*.mp4
+!/public/videos/previews/
+!/public/videos/previews/*.mp4
 *.html
 *.tsbuildinfo
 
