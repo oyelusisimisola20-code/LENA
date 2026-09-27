@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowUpRight, Sparkles, Mail, Instagram, Linkedin, MessageSquare } from "lucide-react";
+import { ArrowUpRight, Sparkles, Mail, Instagram, Linkedin, MessageSquare, Phone } from "lucide-react";
 
 export function Footer() {
   return (
@@ -21,38 +21,51 @@ export function Footer() {
             <p className="text-sm text-neutral-secondary max-w-sm leading-relaxed">
               Pioneering the intersection of cinema and generative AI. We engineer high-impact commercials, hyper-real product simulations, and narrative visual worlds for forward-thinking brands.
             </p>
-            <div className="flex items-center gap-3 pt-2">
+            <div className="flex flex-wrap items-center gap-2.5 pt-2">
               <a
-                href="https://instagram.com"
+                href="https://www.fiverr.com/lena_drawux"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-brand-cyan hover:border-brand-cyan/40 transition-colors"
-                aria-label="Instagram"
+                className="px-3 py-1.5 rounded-full bg-dark-900 border border-emerald-500/30 text-emerald-400 hover:bg-emerald-500/10 hover:border-emerald-400 transition-colors font-bold text-xs flex items-center gap-1.5 shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+                aria-label="Fiverr Profile"
+                title="Hire Me on Fiverr"
               >
-                <Instagram className="w-4 h-4" />
+                <span>fi</span>
+                <span className="text-[11px] font-mono uppercase tracking-wider font-semibold">Fiverr</span>
               </a>
               <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="tel:+2348143779940"
                 className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-brand-cyan hover:border-brand-cyan/40 transition-colors"
-                aria-label="LinkedIn"
+                aria-label="Call +234 814 377 9940"
+                title="+234 814 377 9940"
               >
-                <Linkedin className="w-4 h-4" />
+                <Phone className="w-4 h-4" />
               </a>
               <a
-                href="https://wa.me/"
+                href="https://wa.me/2348143779940"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-brand-cyan hover:border-brand-cyan/40 transition-colors"
+                className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-emerald-400 hover:border-emerald-400/40 transition-colors"
                 aria-label="WhatsApp"
+                title="Chat on WhatsApp (+234 814 377 9940)"
               >
                 <MessageSquare className="w-4 h-4" />
               </a>
               <a
-                href="mailto:contact@lenacreative.studio"
+                href="https://www.linkedin.com/in/simisola-oyelusi-0223682a1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-blue-400 hover:border-blue-400/40 transition-colors"
+                aria-label="LinkedIn"
+                title="LinkedIn (Simisola Oyelusi)"
+              >
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a
+                href="mailto:lizabethlenna@gmail.com"
                 className="p-2.5 rounded-full bg-dark-900 border border-white/10 text-neutral-secondary hover:text-brand-cyan hover:border-brand-cyan/40 transition-colors"
                 aria-label="Email"
+                title="lizabethlenna@gmail.com"
               >
                 <Mail className="w-4 h-4" />
               </a>
@@ -127,23 +140,47 @@ export function Footer() {
             <h4 className="text-xs font-mono uppercase tracking-wider text-neutral-primary mb-4">
               Direct Inquiries
             </h4>
-            <div className="space-y-3 text-sm">
-              <p className="text-xs text-neutral-secondary">
-                Ready to produce your next campaign?
-              </p>
+            <div className="space-y-2.5 text-sm">
               <a
-                href="mailto:contact@lenacreative.studio"
-                className="block text-brand-cyan font-mono text-xs hover:underline"
+                href="tel:+2348143779940"
+                className="flex items-center gap-2 text-neutral-secondary hover:text-brand-cyan font-mono text-xs transition-colors"
               >
-                contact@lenacreative.studio
+                <Phone className="w-3.5 h-3.5 text-brand-cyan" />
+                <span>+234 814 377 9940</span>
               </a>
-              <Link
-                href="/contact"
-                className="inline-flex items-center gap-1.5 text-xs font-semibold px-4 py-2 rounded-full bg-white/10 hover:bg-white/20 text-white transition-all mt-2"
+              <a
+                href="https://wa.me/2348143779940"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-neutral-secondary hover:text-emerald-400 font-mono text-xs transition-colors"
               >
-                <span>Request Project Scope</span>
-                <ArrowUpRight className="w-3.5 h-3.5" />
-              </Link>
+                <MessageSquare className="w-3.5 h-3.5 text-emerald-400" />
+                <span>WhatsApp Chat</span>
+              </a>
+              <a
+                href="https://www.fiverr.com/lena_drawux"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 font-mono text-xs transition-colors font-medium"
+              >
+                <span className="font-bold text-[10px] px-1 rounded bg-emerald-500/20 border border-emerald-500/30">fi</span>
+                <span>Hire on Fiverr</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/simisola-oyelusi-0223682a1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-neutral-secondary hover:text-blue-400 font-mono text-xs transition-colors"
+              >
+                <Linkedin className="w-3.5 h-3.5 text-blue-400" />
+                <span>LinkedIn Profile</span>
+              </a>
+              <a
+                href="mailto:lizabethlenna@gmail.com"
+                className="block text-brand-cyan font-mono text-xs hover:underline pt-1"
+              >
+                lizabethlenna@gmail.com
+              </a>
             </div>
           </div>
         </div>

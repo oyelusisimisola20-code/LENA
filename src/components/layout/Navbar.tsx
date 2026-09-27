@@ -81,11 +81,17 @@ export function Navbar() {
         </nav>
 
         {/* Action Button & Status */}
-        <div className="hidden md:flex items-center gap-4">
-          <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-[11px] font-mono text-emerald-400">
+        <div className="hidden md:flex items-center gap-3">
+          <a
+            href="https://www.fiverr.com/lena_drawux"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-[11px] font-mono text-emerald-400 hover:bg-emerald-500/20 transition-all shadow-[0_0_15px_rgba(16,185,129,0.1)]"
+            title="Hire on Fiverr"
+          >
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping" />
-            <span>Available for Q4</span>
-          </div>
+            <span>Fiverr Profile</span>
+          </a>
 
           <Link
             href="/contact"
@@ -134,7 +140,17 @@ export function Navbar() {
             })}
           </div>
 
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col gap-2">
+            <a
+              href="https://www.fiverr.com/lena_drawux"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-xs font-semibold border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500/20 transition-all"
+            >
+              <span>Hire Me on Fiverr</span>
+              <ArrowUpRight className="w-3.5 h-3.5" />
+            </a>
+
             <Link
               href="/contact"
               className="flex items-center justify-center gap-2 w-full py-3 rounded-xl text-sm font-semibold bg-brand-cyan text-dark-950 hover:bg-cyan-300 transition-all shadow-[0_0_20px_rgba(0,240,255,0.3)]"

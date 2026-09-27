@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Send, CheckCircle2, Sparkles, MessageSquare, Mail, Calendar, Linkedin, Instagram, ArrowUpRight } from "lucide-react";
+import { Send, CheckCircle2, Sparkles, MessageSquare, Mail, Calendar, Linkedin, Instagram, ArrowUpRight, Phone } from "lucide-react";
 import { Button } from "../ui/Button";
 
 const PROJECT_TYPES = [
@@ -73,23 +73,41 @@ export function ContactForm() {
         {/* Channel Cards */}
         <div className="space-y-3">
           <a
-            href="mailto:contact@lenacreative.studio"
+            href="https://www.fiverr.com/lena_drawux"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-4 rounded-2xl bg-dark-900 border border-emerald-500/30 hover:border-emerald-500 hover:bg-dark-850 transition-all flex items-center justify-between group shadow-[0_0_20px_rgba(16,185,129,0.08)]"
+          >
+            <div className="flex items-center gap-3.5">
+              <div className="w-10 h-10 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-black text-sm tracking-tighter group-hover:bg-emerald-500 group-hover:text-black transition-all">
+                fi
+              </div>
+              <div>
+                <p className="text-xs font-mono text-emerald-400 uppercase tracking-wider">Hire Me On Fiverr</p>
+                <p className="text-sm font-semibold text-white">fiverr.com/lena_drawux</p>
+              </div>
+            </div>
+            <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-emerald-400 transition-colors" />
+          </a>
+
+          <a
+            href="tel:+2348143779940"
             className="p-4 rounded-2xl bg-dark-900 border border-white/10 hover:border-brand-cyan/40 hover:bg-dark-850 transition-all flex items-center justify-between group"
           >
             <div className="flex items-center gap-3.5">
               <div className="p-2.5 rounded-xl bg-dark-800 text-brand-cyan group-hover:bg-brand-cyan/10">
-                <Mail className="w-5 h-5" />
+                <Phone className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-mono text-neutral-muted">Direct Email</p>
-                <p className="text-sm font-semibold text-white">contact@lenacreative.studio</p>
+                <p className="text-xs font-mono text-neutral-muted">Direct Phone & Inquiries</p>
+                <p className="text-sm font-semibold text-white">+234 814 377 9940</p>
               </div>
             </div>
             <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-brand-cyan transition-colors" />
           </a>
 
           <a
-            href="https://wa.me/"
+            href="https://wa.me/2348143779940"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 rounded-2xl bg-dark-900 border border-white/10 hover:border-emerald-500/40 hover:bg-dark-850 transition-all flex items-center justify-between group"
@@ -100,32 +118,14 @@ export function ContactForm() {
               </div>
               <div>
                 <p className="text-xs font-mono text-neutral-muted">WhatsApp Quick Chat</p>
-                <p className="text-sm font-semibold text-white">Direct Brand Line</p>
+                <p className="text-sm font-semibold text-white">+234 814 377 9940</p>
               </div>
             </div>
             <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-emerald-400 transition-colors" />
           </a>
 
           <a
-            href="https://calendly.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-4 rounded-2xl bg-dark-900 border border-white/10 hover:border-brand-amber/40 hover:bg-dark-850 transition-all flex items-center justify-between group"
-          >
-            <div className="flex items-center gap-3.5">
-              <div className="p-2.5 rounded-xl bg-dark-800 text-brand-amber group-hover:bg-brand-amber/10">
-                <Calendar className="w-5 h-5" />
-              </div>
-              <div>
-                <p className="text-xs font-mono text-neutral-muted">Creative Discovery</p>
-                <p className="text-sm font-semibold text-white">Book 15-Min Intro Call</p>
-              </div>
-            </div>
-            <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-brand-amber transition-colors" />
-          </a>
-
-          <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/simisola-oyelusi-0223682a1"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 rounded-2xl bg-dark-900 border border-white/10 hover:border-blue-400/40 hover:bg-dark-850 transition-all flex items-center justify-between group"
@@ -135,11 +135,27 @@ export function ContactForm() {
                 <Linkedin className="w-5 h-5" />
               </div>
               <div>
-                <p className="text-xs font-mono text-neutral-muted">Professional Inquiries</p>
-                <p className="text-sm font-semibold text-white">Connect on LinkedIn</p>
+                <p className="text-xs font-mono text-neutral-muted">LinkedIn Profile</p>
+                <p className="text-sm font-semibold text-white">Simisola Oyelusi</p>
               </div>
             </div>
             <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-blue-400 transition-colors" />
+          </a>
+
+          <a
+            href="mailto:lizabethlenna@gmail.com"
+            className="p-4 rounded-2xl bg-dark-900 border border-white/10 hover:border-brand-cyan/40 hover:bg-dark-850 transition-all flex items-center justify-between group"
+          >
+            <div className="flex items-center gap-3.5">
+              <div className="p-2.5 rounded-xl bg-dark-800 text-brand-cyan group-hover:bg-brand-cyan/10">
+                <Mail className="w-5 h-5" />
+              </div>
+              <div>
+                <p className="text-xs font-mono text-neutral-muted">Direct Email</p>
+                <p className="text-sm font-semibold text-white">lizabethlenna@gmail.com</p>
+              </div>
+            </div>
+            <ArrowUpRight className="w-4 h-4 text-neutral-muted group-hover:text-brand-cyan transition-colors" />
           </a>
         </div>
 

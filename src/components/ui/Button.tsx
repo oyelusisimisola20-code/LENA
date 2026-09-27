@@ -6,12 +6,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   variant?: "primary" | "secondary" | "outline" | "ghost" | "cyan" | "amber";
   size?: "sm" | "md" | "lg";
   href?: string;
+  target?: string;
+  rel?: string;
   icon?: React.ReactNode;
   iconRight?: React.ReactNode;
 }
 
 export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, variant = "primary", size = "md", href, icon, iconRight, children, ...props }, ref) => {
+  ({ className, variant = "primary", size = "md", href, target, rel, icon, iconRight, children, ...props }, ref) => {
     const baseStyles = "inline-flex items-center justify-center font-medium transition-all duration-300 rounded-full select-none disabled:opacity-50 disabled:pointer-events-none group";
 
     const sizeStyles = {
@@ -33,7 +35,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 
     if (href) {
       return (
-        <Link href={href} className={classes}>
+        <Link href={href} target={target} rel={rel} className={classes}>
           {icon && <span className="transition-transform group-hover:-translate-x-0.5">{icon}</span>}
           <span>{children}</span>
           {iconRight && <span className="transition-transform group-hover:translate-x-0.5">{iconRight}</span>}

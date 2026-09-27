@@ -82,6 +82,17 @@ export function HeroSection() {
           </Button>
 
           <Button
+            href="https://www.fiverr.com/lena_drawux"
+            target="_blank"
+            variant="secondary"
+            size="lg"
+            iconRight={<ArrowUpRight className="w-4 h-4 text-emerald-400" />}
+            className="w-full sm:w-auto border-emerald-500/30 hover:border-emerald-500 text-emerald-300 hover:bg-emerald-500/10"
+          >
+            Hire on Fiverr
+          </Button>
+
+          <Button
             href="/contact"
             variant="secondary"
             size="lg"
