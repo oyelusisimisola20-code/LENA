@@ -3,7 +3,7 @@
 import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Play, ArrowUpRight, Sparkles } from "lucide-react";
+import { Play, ArrowUpRight, Volume2, VolumeX } from "lucide-react";
 import { Project } from "@/types";
 import { cn } from "@/lib/utils";
 
@@ -17,10 +17,12 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
     if (videoRef.current) {
+      videoRef.current.muted = isMuted;
       const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch(() => {
@@ -35,6 +37,19 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
     if (videoRef.current) {
       videoRef.current.pause();
       videoRef.current.currentTime = 0;
+    }
+  };
+
+  const toggleMute = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (videoRef.current) {
+      const nextMuted = !isMuted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+      // Ensure video is playing if toggled
+      if (videoRef.current.paused) {
+        videoRef.current.play().catch(() => {});
+      }
     }
   };
 
@@ -74,7 +89,7 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
         <video
           ref={videoRef}
           src={project.previewVideo}
-          muted
+          muted={isMuted}
           playsInline
           loop
           preload="none"
@@ -98,14 +113,43 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
         {/* Central Play Button Overlay (Visible on hover) */}
         <div
           className={cn(
-            "absolute inset-0 flex items-center justify-center z-10 transition-all duration-300",
+            "absolute inset-0 flex items-center justify-center z-10 transition-all duration-300 pointer-events-none",
             isHovered ? "opacity-100 scale-100" : "opacity-0 scale-90"
           )}
         >
-          <div className="w-13 h-13 p-3.5 rounded-full bg-brand-cyan text-dark-950 shadow-[0_0_25px_rgba(0,240,255,0.7)] flex items-center justify-center transition-transform group-hover:scale-110">
-            <Play className="w-6 h-6 fill-current translate-x-0.5" />
+          <div className="w-12 h-12 p-3 rounded-full bg-brand-cyan text-dark-950 shadow-[0_0_25px_rgba(0,240,255,0.7)] flex items-center justify-center transition-transform group-hover:scale-110">
+            <Play className="w-5 h-5 fill-current translate-x-0.5" />
           </div>
         </div>
+
+        {/* Unmute / Mute Toggle Button (Hover & Mobile Preview) */}
+        <button
+          type="button"
+          onClick={toggleMute}
+          className={cn(
+            "absolute bottom-3 right-3 z-30 px-2.5 py-1.5 rounded-full text-xs font-mono transition-all duration-300 flex items-center gap-1.5 shadow-lg backdrop-blur-md",
+            isHovered
+              ? "opacity-100 translate-y-0 pointer-events-auto"
+              : "opacity-0 translate-y-2 pointer-events-none",
+            isMuted
+              ? "bg-dark-950/90 text-neutral-200 hover:text-white hover:bg-black border border-white/20"
+              : "bg-brand-cyan text-dark-950 font-bold border border-cyan-300 shadow-[0_0_15px_rgba(0,240,255,0.5)]"
+          )}
+          title={isMuted ? "Click to Unmute video" : "Click to Mute video"}
+          aria-label={isMuted ? "Unmute video" : "Mute video"}
+        >
+          {isMuted ? (
+            <>
+              <VolumeX className="w-3.5 h-3.5 text-neutral-400" />
+              <span className="text-[11px] font-medium tracking-tight">Unmute</span>
+            </>
+          ) : (
+            <>
+              <Volume2 className="w-3.5 h-3.5 text-dark-950" />
+              <span className="text-[11px] font-bold tracking-tight">Sound On</span>
+            </>
+          )}
+        </button>
 
         {/* Bottom subtle gradient */}
         <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-dark-950/90 via-dark-950/40 to-transparent pointer-events-none" />

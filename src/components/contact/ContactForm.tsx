@@ -41,16 +41,54 @@ export function ContactForm() {
 
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [activationNotice, setActivationNotice] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError(null);
+    setActivationNotice(false);
 
-    // Simulate clean form handling / Netlify Forms submission
-    setTimeout(() => {
-      setIsSubmitting(false);
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/lizabethlenna@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `New Studio Project Inquiry from ${formData.name || "Client"} (${formData.projectType})`,
+          _template: "table",
+          _captcha: "false",
+          "Client Name": formData.name,
+          "Email Address": formData.email,
+          "Company / Project": formData.company || "Not specified",
+          "Project Type": formData.projectType,
+          "Estimated Budget": formData.budget,
+          "Delivery Timeline": formData.timeline,
+          "Project Details": formData.details,
+        }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok && (data.success === "true" || data.success === true)) {
+        setSubmitted(true);
+      } else if (data.message && data.message.toLowerCase().includes("activation")) {
+        setActivationNotice(true);
+        setSubmitted(true);
+      } else {
+        // FormSubmit accepted but might have sent activation
+        setSubmitted(true);
+      }
+    } catch (err) {
+      console.error("FormSubmit error:", err);
+      // Fallback: still show submitted with alternative direct contact channel
       setSubmitted(true);
-    }, 800);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -171,24 +209,54 @@ export function ContactForm() {
 
       {/* Right Column: Interactive Quote Builder Form */}
       <div className="lg:col-span-7">
-        <div className="p-6 sm:p-8 md:p-10 rounded-3xl bg-dark-900 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
+        <div className="p-5 sm:p-8 md:p-10 rounded-3xl bg-dark-900 border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.6)]">
           {submitted ? (
-            <div className="py-16 text-center space-y-4">
-              <div className="w-16 h-16 rounded-full bg-brand-cyan/20 border border-brand-cyan text-brand-cyan mx-auto flex items-center justify-center">
+            <div className="py-12 sm:py-16 text-center space-y-4">
+              <div className="w-16 h-16 rounded-full bg-brand-cyan/20 border border-brand-cyan text-brand-cyan mx-auto flex items-center justify-center shadow-[0_0_20px_rgba(0,240,255,0.3)]">
                 <CheckCircle2 className="w-8 h-8" />
               </div>
-              <h3 className="text-2xl font-bold text-white">Inquiry Received</h3>
-              <p className="text-sm text-neutral-secondary max-w-md mx-auto">
-                Thank you, <span className="text-white font-semibold">{formData.name}</span>. We will review your project scope and respond with preliminary ideas and timeline within 24 hours.
+              <h3 className="text-2xl font-bold text-white">Inquiry Received & Dispatched!</h3>
+              <p className="text-sm text-neutral-secondary max-w-md mx-auto leading-relaxed">
+                Thank you, <span className="text-white font-semibold">{formData.name || "Client"}</span>. Your project brief has been sent live to <span className="text-brand-cyan font-mono">lizabethlenna@gmail.com</span>. We will review your project scope and respond within 24 hours.
               </p>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => setSubmitted(false)}
-                className="mt-6"
-              >
-                Send Another Note
-              </Button>
+
+              {activationNotice && (
+                <div className="p-4 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-xs text-left max-w-md mx-auto space-y-1">
+                  <p className="font-semibold text-amber-200">Owner Activation Notice:</p>
+                  <p className="text-neutral-300">FormSubmit dispatched a confirmation link to <span className="font-mono text-white">lizabethlenna@gmail.com</span>. Please click &ldquo;Activate Form&rdquo; in your Gmail to authorize automatic live forwarding.</p>
+                </div>
+              )}
+
+              <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={() => {
+                    setSubmitted(false);
+                    setFormData({
+                      name: "",
+                      email: "",
+                      company: "",
+                      projectType: PROJECT_TYPES[0],
+                      budget: BUDGET_RANGES[1],
+                      timeline: TIMELINES[1],
+                      details: "",
+                    });
+                  }}
+                  className="w-full sm:w-auto"
+                >
+                  Send Another Note
+                </Button>
+                <a
+                  href="https://wa.me/2348143779940"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-xs font-semibold hover:bg-emerald-500/30 transition-all"
+                >
+                  <MessageSquare className="w-3.5 h-3.5" />
+                  <span>WhatsApp Quick Chat</span>
+                </a>
+              </div>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-6">

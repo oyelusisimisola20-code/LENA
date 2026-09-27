@@ -37,7 +37,7 @@ export default function ServicesPage() {
           {services.map((service, index) => (
             <div
               key={service.id}
-              className="p-8 sm:p-10 md:p-12 rounded-3xl bg-dark-900 border border-white/10 hover:border-white/20 transition-all grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative overflow-hidden"
+              className="p-6 sm:p-10 md:p-12 rounded-2xl sm:rounded-3xl bg-dark-900 border border-white/10 hover:border-white/20 transition-all grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative overflow-hidden"
             >
               {/* Left Column: Overview */}
               <div className="lg:col-span-6 space-y-4">

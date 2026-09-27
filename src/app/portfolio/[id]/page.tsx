@@ -88,12 +88,13 @@ export default function ProjectDetailPage({ params }: Props) {
             </p>
           </div>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-full sm:w-auto">
             <Button
               href="/contact"
               variant="cyan"
               size="md"
               iconRight={<ArrowUpRight className="w-4 h-4" />}
+              className="w-full sm:w-auto"
             >
               Inquire About Similar
             </Button>
@@ -101,8 +102,8 @@ export default function ProjectDetailPage({ params }: Props) {
         </div>
 
         {/* Video Player Display Container */}
-        <div className="mb-16">
-          <div className={`relative w-full rounded-3xl overflow-hidden bg-black border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.8)] ${isVertical ? "max-w-md mx-auto aspect-[9/16]" : "aspect-video"}`}>
+        <div className="mb-12 sm:mb-16">
+          <div className={`relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-black border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.8)] ${isVertical ? "max-w-md mx-auto aspect-[9/16]" : "aspect-video"}`}>
             <video
               src={project.fullVideo}
               poster={project.thumbnail}

@@ -26,7 +26,7 @@ export function CategoryFilter({
   counts,
 }: CategoryFilterProps) {
   return (
-    <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 scrollbar-none no-scrollbar py-2">
+    <div className="flex items-center gap-2 overflow-x-auto pb-2 sm:pb-0 scrollbar-none no-scrollbar py-2 px-1 sm:px-0 touch-pan-x [-webkit-overflow-scrolling:touch]">
       {CATEGORIES.map((cat) => {
         const isActive = activeCategory === cat.id;
         const count = counts ? counts[cat.id] : null;

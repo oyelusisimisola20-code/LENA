@@ -39,19 +39,19 @@ export function HeroSection() {
       {/* Sound Toggle Floating Control */}
       <button
         onClick={toggleSound}
-        className="absolute bottom-6 right-6 z-20 hidden sm:flex items-center gap-2 px-3.5 py-2 rounded-full bg-dark-900/80 border border-white/10 backdrop-blur-md text-neutral-secondary hover:text-white hover:border-white/30 text-xs font-mono transition-all"
+        className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-20 flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-dark-900/80 border border-white/10 backdrop-blur-md text-neutral-secondary hover:text-white hover:border-white/30 text-[11px] sm:text-xs font-mono transition-all shadow-lg"
         title="Toggle Ambient Audio"
       >
-        {isMuted ? <VolumeX className="w-4 h-4" /> : <Volume2 className="w-4 h-4 text-brand-cyan" />}
-        <span>{isMuted ? "Audio Muted" : "Audio Active"}</span>
+        {isMuted ? <VolumeX className="w-3.5 h-3.5" /> : <Volume2 className="w-3.5 h-3.5 text-brand-cyan" />}
+        <span>{isMuted ? "Muted" : "Sound On"}</span>
       </button>
 
       {/* Main Content Container */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center flex flex-col items-center">
         {/* Top Studio Badge */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-dark-900/90 border border-brand-cyan/30 shadow-[0_0_20px_rgba(0,240,255,0.15)] mb-6 backdrop-blur-md">
-          <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse" />
-          <span className="text-xs font-mono uppercase tracking-widest text-brand-cyan">
+        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 sm:px-4 rounded-full bg-dark-900/90 border border-brand-cyan/30 shadow-[0_0_20px_rgba(0,240,255,0.15)] mb-6 backdrop-blur-md max-w-full">
+          <span className="w-2 h-2 rounded-full bg-brand-cyan animate-pulse shrink-0" />
+          <span className="text-[10px] sm:text-xs font-mono uppercase tracking-widest text-brand-cyan">
             Next-Gen AI Video Production & Creative Studio
           </span>
         </div>

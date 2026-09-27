@@ -186,11 +186,11 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-12 mt-12 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-muted">
+        <div className="pt-12 mt-12 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-muted text-center sm:text-left">
           <p>© {new Date().getFullYear()} LENA — AI Creative Studio. All rights reserved.</p>
-          <div className="flex items-center gap-6">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-6">
             <span>Built with Generative Precision</span>
-            <span>•</span>
+            <span className="hidden sm:inline">•</span>
             <span>Worldwide Remote Delivery</span>
           </div>
         </div>
