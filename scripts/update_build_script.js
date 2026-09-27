@@ -10,3 +10,4 @@ code = code.replace(/thumbnail:\s*"[^"]+"/g, (match, offset, str) => {
 });
 fs.writeFileSync('scripts/build_full_portfolio.js', code);
 console.log('Updated scripts/build_full_portfolio.js with /thumbnails paths');
+
