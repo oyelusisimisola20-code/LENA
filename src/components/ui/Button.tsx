@@ -34,8 +34,9 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     const classes = cn(baseStyles, sizeStyles[size], variantStyles[variant], className);
 
     if (href) {
+      const finalRel = target === "_blank" ? (rel || "noopener noreferrer") : rel;
       return (
-        <Link href={href} target={target} rel={rel} className={classes}>
+        <Link href={href} target={target} rel={finalRel} className={classes}>
           {icon && <span className="transition-transform group-hover:-translate-x-0.5">{icon}</span>}
           <span>{children}</span>
           {iconRight && <span className="transition-transform group-hover:translate-x-0.5">{iconRight}</span>}

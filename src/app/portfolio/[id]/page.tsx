@@ -105,7 +105,7 @@ export default function ProjectDetailPage({ params }: Props) {
         <div className="mb-12 sm:mb-16">
           <div className={`relative w-full rounded-2xl sm:rounded-3xl overflow-hidden bg-black border border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.8)] ${isVertical ? "max-w-md mx-auto aspect-[9/16]" : "aspect-video"}`}>
             <video
-              src={project.fullVideo || project.previewVideo}
+              src={project.fullVideo}
               poster={project.thumbnail}
               controls
               autoPlay

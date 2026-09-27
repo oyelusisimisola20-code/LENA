@@ -1,10 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import { Project, ProjectCategory } from "@/types";
 import { VideoCard } from "./VideoCard";
 import { CategoryFilter } from "./CategoryFilter";
 import { VideoModal } from "../ui/VideoModal";
+
+const VALID_CATEGORIES: ProjectCategory[] = [
+  "All",
+  "AI Ads",
+  "Product Videos",
+  "UGC",
+  "Cinematic",
+  "Social",
+  "Animation",
+];
 
 interface ProjectGridProps {
   projects: Project[];
@@ -17,8 +28,39 @@ export function ProjectGrid({
   initialCategory = "All",
   showFilter = true,
 }: ProjectGridProps) {
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>(initialCategory);
+  const searchParams = useSearchParams();
+  const categoryFromUrl = searchParams.get("category") as ProjectCategory | null;
+
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>(() => {
+    if (categoryFromUrl && VALID_CATEGORIES.includes(categoryFromUrl)) {
+      return categoryFromUrl;
+    }
+    return initialCategory;
+  });
+
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  // Sync state if URL query changes
+  useEffect(() => {
+    if (categoryFromUrl && VALID_CATEGORIES.includes(categoryFromUrl)) {
+      setActiveCategory(categoryFromUrl);
+    } else if (!categoryFromUrl && initialCategory === "All") {
+      setActiveCategory("All");
+    }
+  }, [categoryFromUrl, initialCategory]);
+
+  const handleSelectCategory = (category: ProjectCategory) => {
+    setActiveCategory(category);
+    if (typeof window !== "undefined") {
+      const url = new URL(window.location.href);
+      if (category === "All") {
+        url.searchParams.delete("category");
+      } else {
+        url.searchParams.set("category", category);
+      }
+      window.history.replaceState(null, "", url.toString());
+    }
+  };
 
   // Compute category counts
   const counts: Record<string, number> = {
@@ -39,7 +81,7 @@ export function ProjectGrid({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <CategoryFilter
             activeCategory={activeCategory}
-            onSelectCategory={setActiveCategory}
+            onSelectCategory={handleSelectCategory}
             counts={counts}
           />
           <span className="text-xs font-mono text-neutral-muted">

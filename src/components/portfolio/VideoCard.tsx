@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Play, ArrowUpRight, Volume2, VolumeX } from "lucide-react";
@@ -16,61 +16,39 @@ interface VideoCardProps {
 export function VideoCard({ project, onOpenModal, priority = false }: VideoCardProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
 
-  // Guarantee browser autoplay policy compliance
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.defaultMuted = true;
-      videoRef.current.muted = isMuted;
-    }
-  }, [isMuted]);
-
   const handleMouseEnter = () => {
     setIsHovered(true);
-    const video = videoRef.current;
-    if (video) {
-      video.defaultMuted = true;
-      video.muted = isMuted;
-      const playPromise = video.play();
+    if (videoRef.current) {
+      videoRef.current.muted = isMuted;
+      const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            setIsPlaying(true);
-          })
-          .catch(() => {
-            // If browser policy blocked unmuted playback, force muted and retry
-            if (video) {
-              video.muted = true;
-              setIsMuted(true);
-              video.play().catch(() => {});
-            }
-          });
+        playPromise.catch(() => {
+          // Auto-play was prevented (browser restriction or low power)
+        });
       }
     }
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    setIsPlaying(false);
-    const video = videoRef.current;
-    if (video) {
-      video.pause();
-      video.currentTime = 0;
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
 
   const toggleMute = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const video = videoRef.current;
-    if (video) {
+    if (videoRef.current) {
       const nextMuted = !isMuted;
-      video.muted = nextMuted;
+      videoRef.current.muted = nextMuted;
       setIsMuted(nextMuted);
-      if (video.paused) {
-        video.play().catch(() => {});
+      // Ensure video is playing if toggled
+      if (videoRef.current.paused) {
+        videoRef.current.play().catch(() => {});
       }
     }
   };
@@ -101,8 +79,8 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className={cn(
-            "object-cover transition-transform duration-700",
-            isHovered ? "scale-105" : "scale-100"
+            "object-cover transition-all duration-700",
+            isHovered && isVideoLoaded ? "opacity-0 scale-105" : "opacity-100 scale-100"
           )}
           priority={priority}
         />
@@ -111,25 +89,19 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
         <video
           ref={videoRef}
           src={project.previewVideo}
-          poster={project.thumbnail}
           muted={isMuted}
           playsInline
           loop
-          preload="metadata"
+          preload="none"
           onLoadedData={() => setIsVideoLoaded(true)}
-          onPlaying={() => {
-            setIsVideoLoaded(true);
-            setIsPlaying(true);
-          }}
-          onPause={() => setIsPlaying(false)}
           className={cn(
-            "absolute inset-0 w-full h-full object-cover transition-opacity duration-300 z-10",
+            "absolute inset-0 w-full h-full object-cover transition-opacity duration-500",
             isHovered ? "opacity-100" : "opacity-0 pointer-events-none"
           )}
         />
 
         {/* Top Badges */}
-        <div className="absolute top-3 inset-x-3 flex items-center justify-between z-20 pointer-events-none">
+        <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10 pointer-events-none">
           <span className="px-2.5 py-1 text-[11px] font-mono tracking-wider uppercase rounded-full bg-dark-950/80 backdrop-blur-md text-brand-cyan border border-brand-cyan/30">
             {project.category}
           </span>
@@ -138,11 +110,11 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
           </span>
         </div>
 
-        {/* Central Play Button Overlay (Visible only briefly on hover until video starts playing) */}
+        {/* Central Play Button Overlay (Visible on hover) */}
         <div
           className={cn(
-            "absolute inset-0 flex items-center justify-center z-20 transition-all duration-300 pointer-events-none",
-            isHovered && !isPlaying ? "opacity-100 scale-100" : "opacity-0 scale-90"
+            "absolute inset-0 flex items-center justify-center z-10 transition-all duration-300 pointer-events-none",
+            isHovered ? "opacity-100 scale-100" : "opacity-0 scale-90"
           )}
         >
           <div className="w-12 h-12 p-3 rounded-full bg-brand-cyan text-dark-950 shadow-[0_0_25px_rgba(0,240,255,0.7)] flex items-center justify-center transition-transform group-hover:scale-110">
@@ -180,7 +152,7 @@ export function VideoCard({ project, onOpenModal, priority = false }: VideoCardP
         </button>
 
         {/* Bottom subtle gradient */}
-        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-dark-950/90 via-dark-950/40 to-transparent pointer-events-none z-10" />
+        <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-dark-950/90 via-dark-950/40 to-transparent pointer-events-none" />
       </div>
 
       {/* Content & Metadata Area */}

@@ -11,8 +11,12 @@ export function HeroSection() {
 
   const toggleSound = () => {
     if (videoRef.current) {
-      videoRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
+      const nextMuted = !isMuted;
+      videoRef.current.muted = nextMuted;
+      setIsMuted(nextMuted);
+      if (videoRef.current.paused) {
+        videoRef.current.play().catch(() => {});
+      }
     }
   };
 
@@ -22,7 +26,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-0">
         <video
           ref={videoRef}
-          src="/videos/gig_video.mp4"
+          src="/videos/previews/project-001.mp4"
           poster="/videos/gig_video-Cover.jpg"
           autoPlay
           loop
@@ -38,6 +42,7 @@ export function HeroSection() {
 
       {/* Sound Toggle Floating Control */}
       <button
+        type="button"
         onClick={toggleSound}
         className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 z-20 flex items-center gap-1.5 sm:gap-2 px-3 py-1.5 sm:px-3.5 sm:py-2 rounded-full bg-dark-900/80 border border-white/10 backdrop-blur-md text-neutral-secondary hover:text-white hover:border-white/30 text-[11px] sm:text-xs font-mono transition-all shadow-lg"
         title="Toggle Ambient Audio"
